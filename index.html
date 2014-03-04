@@ -1,7 +1,7 @@
 <html>
   <head>
   <script type="text/javascript" src="d3.v2.js"></script>
-  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="data.json"></script>
   <style>
     body {
       margin: 0px;
@@ -30,7 +30,7 @@
     //define a color scale using the min and max expression values
     var colorScale = d3.scale.linear()
       .domain([minData, 0, maxData])
-      .range(["blue", "red", "white"]);
+      .range(["blue", "black", "white"]);
 
     //generate the heatmap
     var heatmapRow = mySVG.selectAll(".heatmap")
